@@ -21,7 +21,8 @@ import About from './React router/About';
 import Contact from './React router/Contact';
 import Navbar from './React router/Navbar';
 
-import User from './React router/User';
+
+ import User from './React router/User';
 import Filter from './React router/Filter';
 import Practise from './Practise/Practise';
 import Todo from './Projects /Todo';
@@ -31,6 +32,9 @@ import MyComponent from './Projects /Show';
 import Practise2 from './Practise/Practise2';
 import Practise3 from './Practise/Practise3';
 import MyTodoPractise from './MytodoPractise';
+import UserRedux from './ReduxTutorial/UserRedux';
+import HomeContainer from './ReduxTutorial/container/HomeContainer';
+
 function App() {
 const [listTodo,setListTodo] = useState([ ])
 const [listTodoa,setTodoList] = useState([])
@@ -96,9 +100,16 @@ return(
 <Getapi/> */}
 {/* <Practise2/> */}
 {/* <Practise3/> */}
-{/* <MyTodoPractise/> */}
+{/* <MyTodoPractise/>
 
 <h1>Learn About  Redux Toolkit</h1>
+<h2>App component</h2>
+<Practise3/> */}
+
+
+{/* <UserRedux data = {{name:'shikha jatav',age:21}}/> */}
+
+<HomeContainer/>
 </>
 )
 

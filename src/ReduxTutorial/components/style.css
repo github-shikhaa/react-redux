@@ -1,0 +1,34 @@
+.cart-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 12px 12px;
+    padding: 20px 12px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 12px 12px #86b7fe4d;
+
+}
+.img-wrapper img{
+    width: 107px;
+}
+.btn-wrapper button{
+    background: #ff0000bd;
+    border: none;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.text-wrapper span{
+    display: block;
+    font-size: 21px;
+    font-weight: 500;
+}
+.add-to-cart img{
+    position: absolute;
+    right: 3%;
+    width: 56px;
+}
