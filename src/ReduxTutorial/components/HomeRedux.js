@@ -1,9 +1,11 @@
 import React from 'react'
 import './style.css';
-const HomeRedux = () => {
+const HomeRedux = (props) => {
+    console.warn('props',props.cardData);
   return (
     <div>
         <div className='add-to-cart'>
+           <span>{props.cardData.length}</span>
             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaNfPNaVLi8TXavysWOun7J4C09lnfQztluo2WNpRvDA&s'/>
         </div>
         <div className='cart-wrapper'>
@@ -17,7 +19,12 @@ const HomeRedux = () => {
                 Price : $1000.00</span>   
             </div>
             <div className='btn-wrapper item'>
-            <button>Add to Cart</button>
+            <button onClick={()=>props.addToCartHandler(
+                {
+                    price:1000,
+                    name:'i phone 14'
+                }
+            )}>Add to Cart</button>
             </div>
         </div>
     </div>

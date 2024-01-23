@@ -27,8 +27,21 @@
     font-size: 21px;
     font-weight: 500;
 }
+.add-to-cart{
+    position: relative;
+}
 .add-to-cart img{
     position: absolute;
     right: 3%;
     width: 56px;
+}
+.add-to-cart span{
+    color: white;
+    position: absolute;
+    /* bottom: -1%; */
+    right: 1%;
+    border-radius: 16px;
+    padding: 6px 12px;
+    background: red;
+   
 }
